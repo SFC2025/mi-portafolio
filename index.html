@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Santiago Cossu - Diseñador Web especializado en WordPress, HTML, CSS y JavaScript. Sitios modernos, responsivos y orientados a resultados."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Cossu - Diseñador Web</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="imagenes/1-favicon.png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Graph para compartir -->
+    <meta property="og:title" content="Santiago Cossu | Diseñador Web" />
+    <meta
+      property="og:description"
+      content="Webs profesionales en WordPress, HTML, CSS y JavaScript"
+    />
+    <meta property="og:image" content="imagenes/2-og-diseñador-web.jpg" />
+    <meta property="og:url" content="https://SFC2025.github.io/mi-portafolio/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Estilo específico del header -->
+    <style>
+      header {
+        text-align: center;
+        padding: 120px 20px;
+        background-image: url("imagenes/3-portada.png");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        position: relative;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+      header * {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Botón de modo oscuro -->
+    <button
+      id="modo-oscuro-btn"
+      class="btn"
+      style="margin: 20px"
+      aria-label="Activar modo oscuro"
+    >
+      🌙 Activar modo oscuro
+    </button>
+    <header>
+      <h1>Santiago Cossu</h1>
+      <p>
+        Diseñador web especializado en WordPress y desarrollo de sitios modernos con HTML, CSS y JavaScript
+      </p>
+      <div style="margin-top: 20px; display: flex; justify-content: center">
+        <a href="#contacto" class="btn" style="font-size: 1rem"
+          >📩 Solicitá tu web ahora</a
+        >
+      </div>
+    </header>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#certificaciones">Certificaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="sobre-mi">
+      <div class="sobre-mi-container">
+        <img
+          src="imagenes/4-foto-perfil.jpg"
+          alt="Foto de Santiago Cossu"
+          class="foto-perfil"
+        />
+
+        <div class="sobre-mi-texto">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy <strong>Santiago Cossu</strong>, diseñador web especializado en
+            <strong>WordPress, HTML, CSS y JavaScript</strong>. Desarrollo sitios modernos, responsivos y orientados a resultados para emprendedores, marcas y profesionales.
+          </p>
+          <p>
+            Combino diseño visual con lógica de programación para transformar ideas en experiencias digitales atractivas y efectivas.  
+            ¿Querés potenciar tu presencia online? ¡Estoy para ayudarte!
+          </p>
+
+          <!-- Botones dentro del div correcto -->
+          <a
+            href="https://www.linkedin.com/in/santiago-cossu-7053b0324"
+            class="btn"
+            target="_blank"
+            title="Abrir perfil en LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i> Ver mi perfil en LinkedIn
+          </a>
+          <a
+            href="Santiago Cossu - Curriculum Vitae.pdf"
+
+            class="btn"
+            target="_blank"
+            title="Descargar CV en PDF"
+            download
+          >
+            <i class="fas fa-file-download"></i> Descargar CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+  
+    
+    <section id="servicios">
+  <h2 class="titulo-seccion">Servicios</h2>
+  <div class="servicios-grid">
+    <div class="servicio-card">
+          <h3>Diseño web a medida</h3>
+          <p>
+            Desarrollo de sitios 100% personalizados con HTML, CSS y JavaScript.
+            Ideales para portfolios, landing pages y sitios institucionales.
+          </p>
+        </div>
+        <div class="servicio-card">
+          <h3>Responsive y rendimiento</h3>
+          <p>
+            Optimización para dispositivos móviles y mejoras de velocidad para
+            una experiencia fluida.
+          </p>
+        </div>
+        <div class="servicio-card">
+          <h3>Interactividad y animaciones</h3>
+          <p>
+            Efectos visuales y formularios dinámicos con JavaScript para un
+            sitio moderno y profesional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificaciones">
+      <h2>Certificaciones</h2>
+      <div class="certificaciones-grid">
+        <!-- Tarjeta 1 -->
+        <div class="cert-card">
+          <i class="fas fa-code" title="Front End Libraries · freeCodeCamp"></i>
+          <h3>Front End Development Libraries</h3>
+          <p>freeCodeCamp · 2024</p>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="cert-card">
+          <i
+            class="fas fa-database"
+            title="Estructuras de datos · freeCodeCamp"
+          ></i>
+          <!-- CAMBIADO -->
+          <h3>Legacy JS & Data Structures</h3>
+          <p>freeCodeCamp · 2024</p>
+        </div>
+
+        <div class="cert-card">
+          <i
+            class="fas fa-laptop-code"
+            title="Responsive Design · freeCodeCamp"
+          ></i>
+          <h3>Responsive Web Design</h3>
+          <p>freeCodeCamp · 2023</p>
+        </div>
+
+        <!-- Google -->
+        <div class="cert-card">
+          <i class="fab fa-google" title="Curso de HTML y CSS · Google"></i>
+          <h3>HTML y CSS (1/2)</h3>
+          <p>Google Actívate · 2023</p>
+        </div>
+
+        <div class="cert-card">
+          <i class="fab fa-google" title="HTML y CSS finalizado · Google"></i>
+          <h3>HTML y CSS (2/2)</h3>
+          <p>Google Actívate · 2023</p>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="cert-card">
+          <i class="fab fa-js" title="Curso de JavaScript · EducaciónIT"></i>
+          <h3>JavaScript desde cero</h3>
+          <p>EducaciónIT · 2022</p>
+        </div>
+
+        <!-- Bootcamp -->
+        <div class="cert-card">
+          <i class="fas fa-rocket" title="Bootcamp 4.0 IngeLearn"></i>
+          <h3>BOOTCAMP 4.0</h3>
+          <p>IngeLearn · 2025</p>
+        </div>
+
+        <!-- Título oficial -->
+        <div class="cert-card">
+          <i
+            class="fas fa-user-graduate"
+            title="Tecnicatura en Sistemas · ESBA"
+          ></i>
+          <h3>Tec. Sup. en Análisis de Sistemas</h3>
+          <p>ESBA · 2021–2023</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades Técnicas</h2>
+      <div class="habilidades-grid">
+        <div class="habilidad">
+          <i class="fab fa-html5"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="habilidad">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="habilidad">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="habilidad">
+          <i class="fab fa-wordpress"></i>
+          <span>WordPress</span>
+        </div>
+        <div class="habilidad">
+          <i class="fas fa-database"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="habilidad">
+          <i class="fas fa-paint-brush"></i>
+          <span>Diseño UI</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="porque">
+      <h2>¿Por qué elegirme?</h2>
+      <ul>
+        <li>✔ Más de 10 proyectos web creados</li>
+        <li>✔ Sitios optimizados, rápidos y profesionales</li>
+        <li>✔ Comunicación clara y entregas puntuales</li>
+        <li>✔ Me adapto a tu visión y necesidades reales</li>
+      </ul>
+    </section>
+
+    <section
+      id="portafolio"
+      style="scroll-margin-top: 120px; padding-top: 60px"
+    >
+      <h2>Portafolio</h2>
+      <p>
+        Estos son algunos de los proyectos que desarrollé como práctica
+        profesional:
+      </p>
+
+      <div class="portfolio-flex">
+        <!-- Proyecto 1 -->
+        <div class="project">
+          <h3>💪 NutriFuerza – Sitio institucional ficticio</h3>
+          <p>
+            Landing page desarrollada en HTML y CSS, con estructura clara y
+            enfoque profesional. Proyecto de práctica orientado a sitios
+            institucionales.
+          </p>
+          <p class="tags">HTML · CSS · Responsive · Institucional</p>
+          <img
+            src="imagenes/5-nutrifuerza.jpg"
+            alt="Landing page de NutriFuerza con diseño institucional moderno"
+          />
+          <p style="text-align: center">
+            <a
+              href="https://sfc2025.github.io/NutriFuerza"
+              target="_blank"
+              class="btn"
+            >
+              <i class="fas fa-link"></i> Ver sitio
+            </a>
+          </p>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project">
+          <h3>💪 KetoFácil – Sitio institucional de recetas keto</h3>
+          <p>
+            Landing page desarrollada en HTML y CSS, con estructura clara y
+            enfoque profesional. Proyecto de práctica orientado a sitios
+            institucionales.
+          </p>
+          <p class="tags">HTML · CSS · Responsive · Institucional</p>
+          <img
+            src="imagenes/6-ketofacil.jpg"
+            alt="Landing page KetoFácil con secciones de productos y recetas"
+          />
+          <p style="text-align: center">
+            <a
+              href="https://sfc2025.github.io/ketoFacil"
+              target="_blank"
+              class="btn"
+            >
+              <i class="fas fa-link"></i> Ver sitio
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>🖼️ Galería de Proyectos</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- KetoFácil -->
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="imagenes/7-ketofacil-1.jpg"
+                alt="Pantalla de inicio del sitio KetoFácil"
+              />
+              <p class="slide-caption">KetoFácil – Home</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="imagenes/8-ketofacil-2.jpg"
+                alt="Sección de productos del sitio KetoFácil"
+              />
+              <p class="slide-caption">Sección productos</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="imagenes/9-ketofacil-3.jpg"
+                alt="Vista detalle de una receta en KetoFácil"
+              />
+              <p class="slide-caption">Vista detalle</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img
+                src="imagenes/10-ketofacil-4.jpg"
+                alt="Ebook destacado en KetoFácil"
+              />
+              <p class="slide-caption">Ebook destacado</p>
+            </div>
+          </div>
+
+          <!-- NutriFuerza -->
+<div class="swiper-slide">
+  <div>
+    <img
+      src="imagenes/11-nutrifuerza-1.jpg"
+      alt="Página de inicio de NutriFuerza"
+    />
+    <p class="slide-caption">NutriFuerza – Inicio</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div>
+    <img
+      src="imagenes/13-nutrifuerza-2.jpg"
+      alt="Servicios ofrecidos en NutriFuerza"
+    />
+    <p class="slide-caption">Servicios destacados</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div>
+    <img
+      src="imagenes/14-nutrifuerza-3.jpg"
+      alt="Sección de contacto en NutriFuerza"
+    />
+    <p class="slide-caption">Sección contacto</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div>
+    <img
+      src="imagenes/15-nutrifuerza-4.jpg"
+      alt="Diseño institucional de NutriFuerza"
+    />
+    <p class="slide-caption">Servicios destacados</p>
+  </div>
+</div>
+
+<!--  NUEVA imagen -->
+<div class="swiper-slide">
+  <div>
+    <img  
+      src="imagenes/16-nutrifuerza-5.jpg"
+      alt="Sección recetas de NutriFuerza"
+    />
+    <p class="slide-caption">Sección ubicación</p>
+  </div>
+</div>
+</div> <!-- Esto cierra el .swiper-wrapper -->
+
+
+        <!-- Navegación -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Proyectos Personales - Versión con Swiper -->
+    <section id="proyectos-personales">
+      <h2>🧩 Proyectos Personales</h2>
+
+      <div class="swiper proyectosSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/17-mi-pagina-web-1.jpg"
+              alt="Portada principal del sitio web de Santiago"
+            />
+            <p class="slide-caption">Portada de mi sitio web</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/18-mi-pagina-web-2.jpg"
+              alt="Sección sobre mí de Santiago Cossu"
+            />
+            <p class="slide-caption">Presentación - Sobre mí</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/19-mi-pagina-web-3.jpg"
+              alt="Listado de servicios ofrecidos por Santiago"
+            />
+            <p class="slide-caption">Mis servicios</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/20-mi-pagina-web-4.jpg"
+              alt="Certificaciones obtenidas por Santiago"
+            />
+            <p class="slide-caption">Mis certificaciones</p>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/21-mi-pagina-web-5.jpg"
+              alt="Habilidades técnicas de Santiago Cossu"
+            />
+            <p class="slide-caption">Habilidades técnicas</p>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/22-mi-pagina-web-6.jpg"
+              alt="Beneficios de contratar a Santiago como diseñador web"
+            />
+            <p class="slide-caption">¿Por qué elegirme?</p>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/23-mi-pagina-web-7.jpg"
+              alt="Portafolio visual de proyectos realizados"
+            />
+            <p class="slide-caption">Mi portafolio</p>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/24-mi-pagina-web-8.jpg"
+              alt="Galería de imágenes de sitios web desarrollados"
+            />
+            <p class="slide-caption">Mi galería de proyectos</p>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/25-mi-pagina-web-9.jpg"
+              alt="Testimonios de clientes satisfechos"
+            />
+            <p class="slide-caption">Testimonios</p>
+          </div>
+
+          <!-- Slide 10 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/26-mi-pagina-web-10.jpg"
+              alt="Información de contacto de Santiago Cossu"
+            />
+            <p class="slide-caption">Mi contacto</p>
+          </div>
+
+          <!-- Slide 11 -->
+          <div class="swiper-slide">
+            <img
+              src="imagenes/27-mi-pagina-web-11.jpg"
+              alt="Formulario de contacto en el sitio web de Santiago"
+            />
+            <p class="slide-caption">Formulario de contacto</p>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper init para esta sección -->
+    <script>
+      const proyectosSwiper = new Swiper(".proyectosSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+
+    <section id="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>
+            “Santiago entendió lo que necesitaba desde el primer momento. El
+            sitio quedó impecable y entregado antes de tiempo.”
+          </p>
+          <h4>Lucía Gómez</h4>
+          <span>Emprendedora</span>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            “Muy buena comunicación, trabajo limpio y profesional. Volvería a
+            contratarlo sin dudas.”
+          </p>
+          <h4>Matías Rodríguez</h4>
+          <span>Coach nutricional</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Querés una web profesional? Escribime:</p>
+
+      <ul>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:santiagocossu20@gmail.com"
+            >santiagocossu20@gmail.com</a
+          >
+        </li>
+        <li>
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/5493425009856" target="_blank"
+            >+54 9 342 500 9856</a
+          >
+        </li>
+        <li>
+          <i class="fab fa-linkedin-in"></i>
+          <a
+            href="https://www.linkedin.com/in/santiago-cossu-7053b0324"
+            target="_blank"
+            >Santiago Cossu</a
+          >
+        </li>
+      </ul>
+
+      <a href="mailto:santiagocossu20@gmail.com" class="btn">Escribime</a>
+    </section>
+
+    <section id="formulario">
+      <h2>Formulario de contacto</h2>
+      <form
+        action="https://formsubmit.co/santiagocossu20@gmail.com"
+        method="POST"
+      >
+        <!-- Campos visibles -->
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Tu mensaje"
+          required
+        ></textarea>
+
+        <!-- Campos ocultos (configuración) -->
+        <input type="hidden" name="_next" value="https://sfc2025.github.io/mi-portafolio/gracias.html" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nuevo mensaje desde tu portafolio"
+        />
+        <input type="hidden" name="_template" value="table" />
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="¡Gracias por contactarte, Santiago te responderá pronto!"
+        />
+
+        <button type="submit" class="btn" id="form-btn">Enviar mensaje</button>
+      </form>
+
+      <div id="toast" class="toast">✅ ¡Gracias por tu mensaje!</div>
+    </section>
+
+    <script>
+      const form = document.querySelector("#formulario form");
+      const button = document.getElementById("form-btn");
+      const toast = document.getElementById("toast");
+
+      form.addEventListener("submit", () => {
+        button.innerText = "✅ Mensaje enviado";
+        button.disabled = true;
+
+        toast.classList.add("show");
+
+        setTimeout(() => {
+          toast.classList.remove("show");
+          button.innerText = "Enviar mensaje";
+          button.disabled = false;
+        }, 4000);
+      });
+    </script>
+    <hr style="margin: 40px auto; width: 40%; border: none; border-top: 1px solid rgba(0,0,0,0.1);" />
+
+
+    
+    <section id="qr" style="text-align: center; padding: 40px 20px;  border-radius: 16px;">
+  <h2 style="margin-bottom: 10px;">📱 Escaneá mi QR</h2>
+  <p style="margin-bottom: 20px;">Accedé rápido a esta web desde tu celular</p>
+  <img
+    src="https://cdn.glitch.global/ac43f124-beb1-40ce-9bbf-60afdb2e8eec/Dise%C3%B1o%20Web%20-%20Santiago%20Cossu.jpg?v=1747885461212"
+    alt="Código QR con enlace al sitio web de Santiago Cossu"
+    style="max-width: 180px; width: 100%; margin: 0 auto; display: block; border-radius: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.1);"
+  />
+</section>
+
+    
+    
+    
+    
+    <footer class="footer">
+      <p>Diseñado y desarrollado por Santiago Cossu · Portafolio 2025</p>
+      <div class="social-links">
+        <a
+          href="mailto:santiagocossu20@gmail.com"
+          title="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/5493425009856" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/santiago-cossu-7053b0324"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
