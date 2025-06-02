@@ -991,8 +991,6 @@ body.modo-oscuro #servicios p {
   margin: 40px auto 20px auto;
   color: #222222; /* ← AGREGÁ ESTA LÍNEA */
 }
-
-
 #servicios .titulo-seccion {
   font-size: 2rem;
   font-weight: 700;
@@ -1000,11 +998,6 @@ body.modo-oscuro #servicios p {
   margin: 40px auto 20px auto;
   color: inherit; /* 🔧 usa el color heredado según el modo */
 }
-
-
-
-
-
 body.modo-oscuro #servicios .titulo-seccion {
   color: #000000 !important;
   text-shadow: none !important;
