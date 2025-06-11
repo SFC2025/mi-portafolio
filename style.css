@@ -1009,13 +1009,17 @@ body.modo-oscuro #servicios .titulo-seccion {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
-    padding-bottom: 10px;
+    padding: 20px; /* <-- git addevita tarjetas cortadas */
+    margin-left: -20px;  /* <-- alinea bien el scroll */
+    margin-right: -20px;
     -webkit-overflow-scrolling: touch;
   }
 
   .certificaciones-grid .cert-card {
-    flex: 0 0 80%;
-    min-width: 280px;
-    scroll-snap-align: start;
+    flex: 0 0 85%;  /* un poco más angosto para mostrar margen */
+    min-width: 260px;
+    max-width: 85%;
+    scroll-snap-align: center;
   }
 }
+
