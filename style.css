@@ -506,12 +506,11 @@ html {
 }
 
 .certificaciones-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
-  scroll-behavior: smooth;
 }
 
 .cert-card:hover {
@@ -1003,39 +1002,4 @@ body.modo-oscuro #servicios .titulo-seccion {
   color: #000000 !important;
   text-shadow: none !important;
 }
-
-/* Estilo principal del contenedor slider */
-.cert-slider {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-/* MODO CELULAR: cambia a slider horizontal */
-@media (max-width: 768px) {
-  .cert-slider {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding-bottom: 10px;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .cert-slider .cert-card {
-    flex: 0 0 80%;
-    min-width: 280px;
-    scroll-snap-align: start;
-  }
-
-  .certificaciones-grid {
-    display: block;
-  }
-}
-
-
 
