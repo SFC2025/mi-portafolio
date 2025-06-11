@@ -1018,13 +1018,14 @@ body.modo-oscuro #servicios .titulo-seccion {
     padding: 16px 20px;
   }
 
-  .cert-card {
+  .certificaciones-grid .cert-card {
     flex: 0 0 80%;
     min-width: 260px;
     max-width: 85%;
     scroll-snap-align: start;
   }
 }
+
 
 
 
