@@ -1016,7 +1016,9 @@ body.modo-oscuro #servicios .titulo-seccion {
 /* MODO CELULAR: cambia a slider horizontal */
 @media (max-width: 768px) {
   .cert-slider {
+    display: flex;
     flex-wrap: nowrap;
+    gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -1024,11 +1026,16 @@ body.modo-oscuro #servicios .titulo-seccion {
     -webkit-overflow-scrolling: touch;
   }
 
-  .cert-card {
+  .cert-slider .cert-card {
     flex: 0 0 80%;
     min-width: 280px;
     scroll-snap-align: start;
   }
+
+  .certificaciones-grid {
+    display: block;
+  }
 }
+
 
 
