@@ -1006,22 +1006,23 @@ body.modo-oscuro #servicios .titulo-seccion {
   #certificaciones {
     padding-left: 0;
     padding-right: 0;
+    overflow-x: hidden; /* Evita que el scroll horizontal se corte */
   }
 
   .certificaciones-grid {
-    display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important; /* 🔥 Fuerza que NO se envuelva */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     gap: 16px;
     padding: 16px 20px;
+    width: 100%;
+    display: flex !important; /* Por si algún otro media lo pisa */
   }
 
   .certificaciones-grid .cert-card {
-    flex: 0 0 80%;
+    flex: 0 0 85%;
     min-width: 260px;
-    max-width: 85%;
     scroll-snap-align: start;
   }
 }
