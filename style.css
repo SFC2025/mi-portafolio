@@ -1025,11 +1025,8 @@ body.modo-oscuro #servicios .titulo-seccion {
     min-width: 260px;
     scroll-snap-align: start;
   }
-  body {
-  background-color: pink !important;
 }
 
-}
 
 
 
