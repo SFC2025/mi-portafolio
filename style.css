@@ -1004,20 +1004,31 @@ body.modo-oscuro #servicios .titulo-seccion {
   text-shadow: none !important;
 }
 
+/* Estilo principal del contenedor slider */
+.cert-slider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* MODO CELULAR: cambia a slider horizontal */
 @media (max-width: 768px) {
-  .certificaciones-grid {
-    display: flex;
+  .cert-slider {
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 20px;
+    scroll-behavior: smooth;
     padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
   }
 
   .cert-card {
     flex: 0 0 80%;
-    scroll-snap-align: start;
     min-width: 280px;
+    scroll-snap-align: start;
   }
 }
+
 
