@@ -1031,22 +1031,6 @@ body.modo-oscuro #servicios .titulo-seccion {
 
 }
 
-@media (max-width: 900px) {
-  .certificaciones-grid {
-    scroll-padding-left: 20px;
-    scroll-snap-type: x mandatory;
-    overscroll-behavior-x: contain;
-  }
-
-  .cert-card {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    overflow-x: hidden;
-  }
-}
-
 
 
 
