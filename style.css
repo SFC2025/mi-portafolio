@@ -973,7 +973,6 @@ body.modo-oscuro #servicios p {
   transform: translateY(30px);
   animation: fadeSlideIn 0.8s ease forwards;
   animation-delay: var(--delay, 0s);
-
   background: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -1003,3 +1002,20 @@ body.modo-oscuro #servicios .titulo-seccion {
   text-shadow: none !important;
 }
 
+@media (max-width: 768px) {
+  .certificaciones-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .certificaciones-grid .cert-card {
+    flex: 0 0 80%;
+    min-width: 280px;
+    scroll-snap-align: start;
+  }
+}
