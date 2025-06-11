@@ -507,10 +507,10 @@ html {
 
 .certificaciones-grid {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .cert-card:hover {
@@ -1006,26 +1006,32 @@ body.modo-oscuro #servicios .titulo-seccion {
   #certificaciones {
     padding-left: 0;
     padding-right: 0;
-    overflow-x: hidden; /* Evita que el scroll horizontal se corte */
+    overflow-x: visible;
   }
 
   .certificaciones-grid {
-    flex-wrap: nowrap !important; /* 🔥 Fuerza que NO se envuelva */
+    display: flex;
+    flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 16px;
     padding: 16px 20px;
-    width: 100%;
-    display: flex !important; /* Por si algún otro media lo pisa */
+    scroll-padding-left: 20px;
   }
 
   .certificaciones-grid .cert-card {
-    flex: 0 0 85%;
-    min-width: 260px;
+    flex: 0 0 auto;
+    min-width: 280px;
     scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
   }
 }
+
 
 
 
