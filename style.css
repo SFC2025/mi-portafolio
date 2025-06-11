@@ -1003,33 +1003,30 @@ body.modo-oscuro #servicios .titulo-seccion {
 }
 
 @media (max-width: 900px) {
-  #certificaciones {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .certificaciones-grid {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
     gap: 16px;
-    padding: 16px 20px;
+    padding: 16px;
     margin-left: -20px;
     margin-right: -20px;
+    width: 100vw; /* ← CLAVE: ocupa ancho completo del viewport */
   }
 
   .certificaciones-grid .cert-card {
-    flex: 0 0 80%;
-    min-width: 280px;
-    max-width: 80%;
-    scroll-snap-align: start;
+    flex: 0 0 85%;
+    min-width: 260px;
+    scroll-snap-align: center;
+  }
+
+  #certificaciones {
+    overflow: hidden; /* evita interferencias */
   }
 }
 
-.certificaciones-grid {
-  border: 3px dashed red;
-}
+
 
 
