@@ -506,11 +506,12 @@ html {
 }
 
 .certificaciones-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
+  scroll-behavior: smooth;
 }
 
 .cert-card:hover {
@@ -1001,5 +1002,22 @@ body.modo-oscuro #servicios p {
 body.modo-oscuro #servicios .titulo-seccion {
   color: #000000 !important;
   text-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .certificaciones-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .cert-card {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    min-width: 280px;
+  }
 }
 
