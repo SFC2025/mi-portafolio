@@ -511,6 +511,7 @@ html {
   justify-content: center; /* 🔧 Centra las cards */
   gap: 20px;
   margin-top: 30px;
+  scrollbar-width: none;
 }
 
 .cert-card:hover {
