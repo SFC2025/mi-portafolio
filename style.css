@@ -1022,6 +1022,41 @@ body.modo-oscuro #servicios .titulo-seccion {
   }
 }
 
+/* Estilo para desktop */
+.certificaciones-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  overflow-x: visible;
+}
+
+/* Oculta scrollbar horizontal visualmente (opcional, scroll sigue funcionando) */
+.certificaciones-contenedor::-webkit-scrollbar {
+  display: none;
+}
+.certificaciones-contenedor {
+  scrollbar-width: none;
+}
+
+/* Estilo responsive para celulares */
+@media (max-width: 768px) {
+  .certificaciones-contenedor {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .certificaciones-contenedor .cert-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+}
+
 
 
 
