@@ -1033,17 +1033,10 @@ body.modo-oscuro #servicios .titulo-seccion {
   overflow-x: visible;
 }
 
-/* Oculta scrollbar horizontal visualmente (opcional, scroll sigue funcionando) */
-.certificaciones-contenedor::-webkit-scrollbar {
-  display: none;
-}
-.certificaciones-contenedor {
-  scrollbar-width: none;
-}
-
 /* Estilo responsive para celulares */
 @media (max-width: 768px) {
   .certificaciones-contenedor {
+    display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
@@ -1054,9 +1047,31 @@ body.modo-oscuro #servicios .titulo-seccion {
 
   .certificaciones-contenedor .cert-card {
     flex: 0 0 auto;
+    min-width: 280px;
     scroll-snap-align: start;
   }
+
+  /* ✅ Scrollbar visible */
+  .certificaciones-contenedor::-webkit-scrollbar {
+    height: 6px; /* ajustá según prefieras */
+  }
+
+  .certificaciones-contenedor::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 4px;
+  }
+
+  .certificaciones-contenedor::-webkit-scrollbar-track {
+    background: #eee;
+  }
+
+  /* Firefox */
+  .certificaciones-contenedor {
+    scrollbar-width: thin;
+    scrollbar-color: #999 #eee;
+  }
 }
+
 
 
 
