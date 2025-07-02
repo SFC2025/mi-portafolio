@@ -1078,6 +1078,18 @@ body.modo-oscuro #servicios .titulo-seccion {
   }
 }
 
+.social-links span i {
+  font-size: 1.4em; /* igual que los otros iconos */
+  margin: 0 8px;
+  color: #333333;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links span i:hover {
+  color: #6699ff;
+  transform: scale(1.2);
+}
+
 
 
 
